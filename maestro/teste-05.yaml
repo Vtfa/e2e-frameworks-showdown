@@ -1,0 +1,11 @@
+# flow.yaml
+
+appId: com.saucelabs.mydemoapp.android
+---
+- tapOn:
+    id: "com.saucelabs.mydemoapp.android:id/menuIV"
+- tapOn: "WebView"
+- tapOn: "https://www.website.com"
+- inputText: "google.com"
+- tapOn: "Go To Site"
+

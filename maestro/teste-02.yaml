@@ -1,0 +1,20 @@
+# flow.yaml
+
+appId: com.saucelabs.mydemoapp.android
+---
+- tapOn:
+    id: "com.saucelabs.mydemoapp.android:id/start1IV"
+    index: 0
+- tapOn: "Continue"
+- tapOn:
+    id: "com.saucelabs.mydemoapp.android:id/start2IV"
+    index: 1
+- tapOn: "Continue"
+- tapOn:
+    id: "com.saucelabs.mydemoapp.android:id/start3IV"
+    index: 3
+- tapOn: "Continue"
+- tapOn:
+    id: "com.saucelabs.mydemoapp.android:id/start4IV"
+    index: 2
+- tapOn: "Continue"

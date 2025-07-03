@@ -1,0 +1,16 @@
+# flow.yaml
+
+appId: com.saucelabs.mydemoapp.android
+---
+- tapOn:
+    id: "com.saucelabs.mydemoapp.android:id/productIV"
+    index: 0
+- tapOn: "Green color"
+- tapOn: "Increase item quantity"
+- tapOn: "Increase item quantity"
+- tapOn: "Add to cart"
+- tapOn: "View cart"
+- tapOn: "Decrease item quantity"
+- tapOn: "Decrease item quantity"
+- tapOn: "Remove Item"
+- tapOn: "Go Shopping"

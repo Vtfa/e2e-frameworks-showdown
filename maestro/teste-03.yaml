@@ -1,0 +1,48 @@
+# flow.yaml
+
+appId: com.saucelabs.mydemoapp.android
+---
+- tapOn:
+    id: "com.saucelabs.mydemoapp.android:id/productIV"
+    index: 0
+- tapOn: "Green color"
+- tapOn: "Increase item quantity"
+- tapOn: "Increase item quantity"
+- tapOn: "Increase item quantity"
+- tapOn: "Add to cart"
+- tapOn: "View cart"
+- tapOn: "Proceed To Checkout"
+- tapOn:
+    id: "com.saucelabs.mydemoapp.android:id/fullNameET"
+- inputText: "Test user"
+- tapOn:
+    id: "com.saucelabs.mydemoapp.android:id/address1ET"
+- inputText: "Test address"
+- tapOn:
+    id: "com.saucelabs.mydemoapp.android:id/cityET"
+- inputText: "BH"
+- tapOn:
+    id: "com.saucelabs.mydemoapp.android:id/zipET"
+- inputText: "90210"
+- tapOn:
+    id: "com.saucelabs.mydemoapp.android:id/countryET"
+- inputText: "United States"
+- tapOn: "To Payment"
+- tapOn:
+    id: "com.saucelabs.mydemoapp.android:id/nameET"
+- inputText: "Test user"
+- tapOn:
+    id: "com.saucelabs.mydemoapp.android:id/cardNumberET"
+- inputText: "123456789010"
+- tapOn:
+    id: "com.saucelabs.mydemoapp.android:id/expirationDateET"
+- inputText: "0129"
+- tapOn:
+    id: "com.saucelabs.mydemoapp.android:id/securityCodeET"
+- inputText: "456"
+- tapOn: "Review Order"
+- tapOn: "Place Order"
+- tapOn: "Continue Shopping"
+
+
+
