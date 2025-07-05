@@ -2,6 +2,9 @@ import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.options.UiAutomator2Options;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -88,7 +91,11 @@ public class CreateDriverSession {
 
         // Test 5 - Open WebView and enter URL
         measure("Test 5 - WebView", () -> {
-            driver.findElement(AppiumBy.id("com.saucelabs.mydemoapp.android:id/menuIV")).click();
+            WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+            WebElement menuButton = wait.until(ExpectedConditions.elementToBeClickable(
+                    AppiumBy.id("com.saucelabs.mydemoapp.android:id/menuIV")));
+            menuButton.click();
+
             driver.findElement(AppiumBy.androidUIAutomator(
                     "new UiSelector().text(\"WebView\")")).click();
             driver.findElement(AppiumBy.id("com.saucelabs.mydemoapp.android:id/urlET")).sendKeys("google.com");
